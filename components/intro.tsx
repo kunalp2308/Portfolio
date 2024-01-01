@@ -1,18 +1,24 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import profile_pic from "../public/profilePic.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hooks";
 
 export const Intro = () => {
   const ease = [0.43, 0.13, 0.23, 0.96];
+  const { ref } = useSectionInView("Home", 0.5);
   return (
-    <section className=" mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      ref={ref}
+      id="home"
+      className=" mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
       <div className=" flex items-center justify-center">
         <div className=" relative">
           <motion.div
