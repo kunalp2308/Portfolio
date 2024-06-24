@@ -1,6 +1,7 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { FaNode } from "react-icons/fa";
 import MyHoliday from "@/public/MyHolidays.png";
 import NetflixGPT from "@/public/NetflixGPT.png";
 import NotesOrganizer from "@/public/NotesOrginazer.png";
@@ -34,20 +35,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Digital Specialist Engineer I",
-    location: "Infosys, Bangalore",
+    title: "Digital Specialist Engineer, Infosys Ltd.",
+    project: "Warehouse Management Application",
     description:
-      "I worked as a front-end developer for a client project which maintained warehouse stoke, products and fleet management.",
-    icon: React.createElement(CgWorkAlt),
+      "Developed a responsive and user-friendly UI for a warehouse management system using React.js utilized Redux for state management, Ag-Grid for large data display, and Material UI for design enhancements.",
+    icon: React.createElement(FaReact),
     date: " Dec. 2021 - Sep. 2022",
   },
   {
-    title: "Digital Specialist Engineer II",
-    location: "Infosys, Bangalore",
+    title: "Digital Specialist Engineer, Infosys Ltd.",
+    project: "Television Subscription Service Application",
     description:
-      "Successfully developed a responsive and intuitive user interface for a television package ordering application, enhancing the client’s customer experience and streamlining the ordering process.",
-    icon: React.createElement(FaReact),
-    date: "Oct. 2022 - present",
+      "Developed and implemented a responsive, user-friendly interface for a TV subscription service application, ensuring seamless navigation and an intuitive user experience using Next.js, React.js, ContextAPI& Material UI.",
+    icon: React.createElement(RiNextjsFill),
+    date: "Oct. 2022 - Jan 2024",
+  },
+  {
+    title: "Digital Specialist Engineer, Infosys Ltd.",
+    project: "Middle-ware Service Application",
+    description:
+      " Designed and implemented a middle-ware service to monitor, validate, and log requests and responses between multiple source and target systems, enhancing data integrity and system reliability. Collaborated with team in automating the deployment of 50+ services using Docker and Kubernetes.",
+    icon: React.createElement(FaNode),
+    date: "Feb. 2024 - present",
   },
 ] as const;
 

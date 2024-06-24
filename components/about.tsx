@@ -18,8 +18,7 @@ export const About = () => {
     >
       <h2 className=" text-3xl font-medium capitalize mb-8">About me</h2>
       <p className="mb-3">
-        After graduating with a degree in ECE, I decided to pursue my career
-        towards software development. I'm working as{" "}
+        I'm working as{" "}
         <span className="font-medium">full-stack web development</span> in my
         current organisation. My technical expertise lies in{" "}
         <span className="font-medium">JavaScript,</span> with a focus on
@@ -30,6 +29,7 @@ export const About = () => {
         <span className="font-medium"> Node.js </span> and{" "}
         <span className="font-medium"> Express.js </span> for
         <span className="font-medium"> back-end services </span>, and
+        <span className="font-medium"> MongoDB </span> &{" "}
         <span className="font-medium"> MongoDB </span> for
         <span className="font-medium"> database management. </span>{" "}
         Additionally, I am also familiar with{" "}
