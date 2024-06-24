@@ -4,20 +4,13 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import React, { useRef } from "react";
 
-// type ProjectProps = {
-//   title: string;
-//   description: string;
-//   tags: string[];
-//   imageUrl: StaticImageData;
-// };
-// above one or
-// this
 type ProjectProps = (typeof projectsData)[number];
 export const Project = ({
   title,
   description,
   tags,
   imageUrl,
+  link,
 }: ProjectProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -57,7 +50,7 @@ export const Project = ({
           src={imageUrl}
           alt="prohect_pic"
           quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+          className="absolute hidden sm:block top-8 p-4 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 
         group-hover:scale-[1.04]
         group-hover:-translate-x-3

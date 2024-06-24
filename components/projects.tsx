@@ -6,6 +6,7 @@ import { Project } from "./project";
 import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
+import Link from "next/link";
 
 export const Projects = () => {
   const { ref } = useSectionInView("Projects", 0.4);
@@ -17,7 +18,9 @@ export const Projects = () => {
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
-            <Project {...project} />
+            <Link href={project.link} target="_blank">
+              <Project {...project} />
+            </Link>
           </React.Fragment>
         ))}
       </div>

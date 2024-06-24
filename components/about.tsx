@@ -1,9 +1,7 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { useActiveSectionContext } from "@/context/active-section-context";
-import { useInView } from "react-intersection-observer";
 import { useSectionInView } from "@/lib/hooks";
 
 export const About = () => {
@@ -12,7 +10,7 @@ export const About = () => {
   return (
     <motion.section
       ref={ref}
-      className=" mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className=" mb-28 max-w-[45rem] text-center leading-8 sm:mb-34 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -20,30 +18,25 @@ export const About = () => {
     >
       <h2 className=" text-3xl font-medium capitalize mb-8">About me</h2>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
-
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        After graduating with a degree in ECE, I decided to pursue my career
+        towards software development. I'm working as{" "}
+        <span className="font-medium">full-stack web development</span> in my
+        current organisation. My technical expertise lies in{" "}
+        <span className="font-medium">JavaScript,</span> with a focus on
+        frameworks and libraries such as{" "}
+        <span className="font-medium"> React.js </span> and{" "}
+        <span className="font-medium"> Next.js </span> for{" "}
+        <span className="font-medium"> front-end development </span>,{" "}
+        <span className="font-medium"> Node.js </span> and{" "}
+        <span className="font-medium"> Express.js </span> for
+        <span className="font-medium"> back-end services </span>, and
+        <span className="font-medium"> MongoDB </span> for
+        <span className="font-medium"> database management. </span>{" "}
+        Additionally, I am also familiar with{" "}
+        <span className="font-medium">TypeScript</span>, and I have utilized CSS
+        frameworks like <span className="font-medium"> Tailwind </span> and
+        <span className="font-medium"> MaterialUI</span> to create visually
+        appealing, responsive and user-friendly interfaces.
       </p>
     </motion.section>
   );

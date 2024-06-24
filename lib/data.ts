@@ -1,10 +1,9 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import MyHoliday from "@/public/MyHolidays.png";
+import NetflixGPT from "@/public/NetflixGPT.png";
+import NotesOrganizer from "@/public/NotesOrginazer.png";
 
 export const links = [
   {
@@ -35,52 +34,61 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Digital Specialist Engineer I",
+    location: "Infosys, Bangalore",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked as a front-end developer for a client project which maintained warehouse stoke, products and fleet management.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: " Dec. 2021 - Sep. 2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Digital Specialist Engineer II",
+    location: "Infosys, Bangalore",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Successfully developed a responsive and intuitive user interface for a television package ordering application, enhancing the client’s customer experience and streamlining the ordering process.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Oct. 2022 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "MyHolidays",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Developed & Implemented secure login, registration with JWT, hotel management, Cloudinary image uploads, and Stripe payments for a seamless user experience.",
+    tags: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind",
+      "TypeScript",
+    ],
+    imageUrl: MyHoliday,
+    link: "https://myholidays-com.onrender.com/",
   },
   {
-    title: "rmtDev",
+    title: "NetflixGPT",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Developed a react-based movie suggestion app utilizing the ChatGPT API for personalized recommendations, featuring a Netflix-inspired UI for an intuitive user experience.",
+    tags: [
+      "React",
+      "JavaScript",
+      "Redux",
+      "Tailwind",
+      "Firebase",
+      "ChatGPT API",
+    ],
+    imageUrl: NetflixGPT,
+    link: "https://netflixgpt-negk.onrender.com/",
   },
   {
-    title: "Word Analytics",
+    title: "Notes Organizer",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A React-based Notes Organizer app for managing daily tasks, utilizing localStorage for data persistence. Features include filtering by title and content, and categorization for easy organization.",
+    tags: ["React", "JavaScript", "localStorage"],
+    imageUrl: NotesOrganizer,
+    link: "https://notesorganizerfordailytask.netlify.app/",
   },
 ];
 
@@ -91,17 +99,23 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
-  "Express",
   "Tailwind",
+  "Bootstrap",
   "Material UI",
   "Redux",
   "Redux Toolkit",
-  "MongoDB",
   "Jest",
   "Enzyme",
-  "Framer Motion",
-  "Git",
+  "Node.js",
+  "Express",
+  "MongoDB",
+  "PostgreSQL",
+  "Jenkins",
+  "Docker",
+  "Kubernetes",
+  "Git/Github",
+  "Postman",
+  "Lens",
   "Python",
   "C++",
 ] as const;

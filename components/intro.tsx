@@ -71,7 +71,7 @@ export const Intro = () => {
         <span className="font-bold">Hello, I'm Kunal.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">2 years</span> of experience. I enjoy
-        building <span>web application</span>. My focus is{" "}
+        building <span>web application</span>. My focus is specially{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>
       <motion.div
@@ -114,7 +114,7 @@ export const Intro = () => {
           className="  bg-white  p-4 text-gray-700 flex items-center gap-2 rounded-full
         focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition
          cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/Kunal2308"
+          href="https://github.com/kunalp2308"
           target="_blank"
         >
           <FaGithubSquare />
